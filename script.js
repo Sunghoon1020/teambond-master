@@ -27,6 +27,7 @@ function showHideModules() {
         login.style.display = "none";
         profile.style.display = "block";
     }
+    
 }
 
 form.addEventListener('submit', function(e) {
@@ -37,5 +38,6 @@ form.addEventListener('submit', function(e) {
 	} else {
         alert("Incorrect username or password, please try again.");
 		showHideModules();
+
 	}
 });

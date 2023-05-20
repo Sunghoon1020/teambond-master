@@ -7,6 +7,7 @@ $user_name = $_POST['user_name'];
 $password = $_POST['user_password'];
 
 
+
 $user_name = mysqli_real_escape_string($connection, $user_name);
 $password = mysqli_real_escape_string($connection, $password);
 

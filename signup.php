@@ -11,6 +11,7 @@ $address = $_POST['address'];
 $city = $_POST['city'];     
 
 
+
 if(!empty($user_name) && !empty($user_email) && !empty($user_password)){
 
     $user_name = mysqli_real_escape_string($connection,$user_name);

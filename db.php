@@ -9,6 +9,7 @@
     $db_user,
     $db_password,
     $db_db
+    
   );
 	
   if ($connection->connect_error) {
