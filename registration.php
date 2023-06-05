@@ -41,6 +41,7 @@
                 <input type="text" name="city" id="city" class="form-control" placeholder="Enter your City">
             </div>
             <input type="submit" name="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Submit">
+            <input type="button" name="cancel" class="btn btn-custom btn-lg btn-block" onclick="location.href='./index.php'" value="Cancel"/>
 
         </form>
       </div>
