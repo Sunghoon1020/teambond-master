@@ -49,7 +49,19 @@ $rs = mysqli_query($connection, $query);
     left: 0;
     width: 100%;
 }  
+.container button {
+border: none;
+background-color: #1c8adb;
+color: #fff;
+padding: 10px 10px;
+border-radius: 5px;
+cursor: pointer;
+}
 
+.container button:hover {
+	background-color: #39ace7;
+	color: #000;
+}
 </style>
 <!DOCTYPE html>
 <html>
@@ -59,9 +71,8 @@ $rs = mysqli_query($connection, $query);
         <script src="script.js"></script>
     </head>
     <body>
-    <header>
-      <h1>TeamBond App</h1>
-    </header>
+    <?php include "header.php" ?>
+
     <br>
     <form role="form" action="edit_post_backend.php?user=<?=$post_user_name?>" method="post" autocomplete="off">
     <div class="container">
@@ -70,27 +81,27 @@ $rs = mysqli_query($connection, $query);
         <table class="tbl" border="1" style="border-collapse:collapse;">
             <thead>
                 <tr>
-                    <th width="100px">Title</th>
+                    <th width="100px" style="background-color: #D5D5D5;">Title</th>
                     <th width="300px" colspan="3"><input type="text" name="title" value="<?=$title?>" style="width:490px; border:none; pointer-events:none; appearance: none;"></th>
                 </tr>
                 <tr>
-                    <th width="100px">Author</th>
+                    <th width="100px" style="background-color: #D5D5D5;">Author</th>
                     <th width="200px"><input type="text" name="user_name" value="<?=$user_name?>" style="border:none; pointer-events:none; appearance: none;"></th>
-                    <th width="100px">Date</th>
+                    <th width="100px" style="background-color: #D5D5D5;">Date</th>
                     <th width="200px"><input type="date" name="date" value="<?=$date?>" style="border:none; pointer-events:none; appearance: none;"></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td colspan="4">
-                    <textarea row="5" cols="75" name="contents"><?=$contents?></textarea>
+                    <textarea row="5" cols="75" name="contents" style="border:none;"><?=$contents?></textarea>
                     </td>
                 </tr>
             </tbody>
         </table>
         <br>
-        <a href="main.php?user_name=<?=$user_name?>"><button type="button" name="back" class='btn btn-custom btn-lg btn-block'>Back</button></a>
         <a href="edit_post.php?user_name=<?=$user_name?>&title=<?=$title?>&user=<?=$post_user_name?>"><button type="submit" name="submit" class='btn btn-custom btn-lg btn-block'>Edit</button></a>
+        <a href="main.php?user_name=<?=$user_name?>"><button type="button" name="back" class='btn btn-custom btn-lg btn-block'>Back</button></a>
 
     </div>
     </form>

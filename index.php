@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -17,6 +18,19 @@
       left: 0;
       width: 100%;
     }  
+    .login-box {
+      width: 320px;
+      height: 420px;
+      background: #fff;
+      color: #000;
+      top: 70%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      box-sizing: border-box;
+      padding: 150px 30px;
+      border-radius: 10px;
+    }
     </style>
 
   </head>
@@ -32,9 +46,10 @@
 
       <div class="login-box" id="login" style="height:100%">
         <h1>Login</h1>
-        <form action="login.php?id='<?=$id?>" method="post" name="login">
+
+        <form  role="form" action="login.php?id='<?=$id?>" method="post" name="login">
           <label for="username">Username:</label>
-          <input type="text" id="username" name="user_name" placeholder="Enter username" required>
+          <input type="text" id="username" name="user_name" value="<?=$id?>" placeholder="Enter username" required>
     
           <label for="password">Password:</label>
           <input type="password" id="password" name="user_password" placeholder="Enter password" required>
@@ -42,10 +57,6 @@
           <button type="submit" name="login" id="login-btn">Login</button>
           <a href="./registration.php"><button type="button">Sign up</button></a>
         </form>
-      </div>
-
-      <div id="profile">
-        Welcome, Admin!
       </div>
     </main>
     

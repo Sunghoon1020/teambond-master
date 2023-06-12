@@ -26,10 +26,8 @@ $user_name = $_GET['user_name'];
 
 </style>
     <body>
-    <header>
-      <h1>TeamBond App</h1>
-      
-    </header>
+    <?php include "header.php" ?>
+
     <main>
     <form role="form" action="edit_profile_backend.php?user_name=<?=$user_name?>" method="post" autocomplete="off">
     <h2 style="text-align:center;">Edit Profile</h2>

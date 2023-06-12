@@ -29,10 +29,8 @@ input {
     <!-- Page Content -->
 
     <body>
-    <header>
-      <h1>TeamBond App</h1>
-      
-    </header>
+    <?php include "header.php" ?>
+
     <main>
     <form role="form" action="edit_profile.php?user_name=<?=$user_name?>" method="post" autocomplete="off">
     <h2 style="text-align:center;">View Profile</h2>

@@ -12,7 +12,7 @@ $user_name = mysqli_real_escape_string($connection, $user_name);
 $password = mysqli_real_escape_string($connection, $password);
 
 $query = "select * from users where user_name = '$user_name'";
-$rs = mysqli_query($connection, $query);
+// $rs = mysqli_query($connection, $query);
 
 
 if(!$rs){
@@ -22,11 +22,11 @@ while($row = mysqli_fetch_array($rs)){
     $db_user_name = $row['user_name'];
     $db_user_password = $row['user_password'];
 }
-if($user_name !== $db_user_name && $password !== $db_user_password ){
-    header("Location: index.php");
-}else {
-    echo 'Username or Password are not matched.';
-    header("Location: main.php?user_name=$user_name");
-}
+// if($user_name !== $db_user_name && $password !== $db_user_password ){
+//     header("Location: index.php");
+// }else {
+//     echo 'Username or Password are not matched.';
+//     header("Location: main.php?user_name=$user_name");
+// }
 
 }

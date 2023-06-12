@@ -40,6 +40,23 @@ th {
 td{
     height: 25px;
 }
+
+
+.container button {
+	margin-top: 30px;
+	border: none;
+	background-color: #1c8adb;
+	color: #fff;
+	padding: 10px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.container button:hover {
+	background-color: #39ace7;
+	color: #000;
+}
+
 </style>
 <!DOCTYPE html>
 <html>
@@ -49,18 +66,10 @@ td{
         <script src="script.js"></script>
     </head>
     <body>
-    <header>
-        <div width="150px">
-        <h1>TeamBond App</h1>
-        </div>
-        <div>
-        Login <a href="view_profile.php?user_name=<?=$user_name?>" style="color:white"><?=$user_name?></a>
-        <a href="index.php"><button>Sign Out</button></a>
-        </div>
-    </header>
+    <?php include "header.php" ?>
     <div class="container">
         <form role="form" action="add_post.php?user_name=<?=$user_name?>" enctype='multipart/form-data' method="post" autocomplete="off">
-        <h4><button type="submit" class='btn btn-custom btn-lg btn-block'>Add</button></h4>
+        <h4 style="text-align:center;"><button type="submit" class='btn btn-custom btn-lg btn-block'>Add Post</button></h4>
         </form>
         <table class="tbl" border="1" style="border-collapse:collapse; text-align:center;">
             <thead>

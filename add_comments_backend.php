@@ -11,40 +11,56 @@
     $db_db
     
   );
-if(isset($_POST['submit'])){
+  
+if(isset($_POST['comments_submit'])){
 
 $user_name = $_POST['user_name'];
 $title = $_POST['title'];
 $contents = $_POST['contents'];        
 $date = $_POST['date'];
+$comment_user_name = $_POST['comment_user_name'];
+$comments = $_POST['comments'];
+$comment_date = $_POST['comment_date'];
 
 
-if(!empty($title) && !empty($contents)){
+
+var_dump('test'.$comment_user_name);
+var_dump('test'.$comments);
+var_dump('test'.$comment_date);
+
+
+
+if(!empty($comment_user_name) && !empty($comments)){
     
-    $query = "INSERT INTO post(user_name,
+    $query = "INSERT INTO comment(user_name,
     title,
     contents,
-    date
+    date,
+    comment_user_name,
+    comments,
+    comment_date
     )
     VALUES('$user_name',
     '$title',
     '$contents',
-    '$date'
+    '$date',
+    '$comment_user_name',
+    '$comments',
+    '$comment_date'
     )"; 
     var_dump($query);
     $rs = mysqli_query($connection,$query);
-    var_dump($rs);
-    // var_dump($query);
     if(!$rs){
         die("query failed".mysqli_error($connection). ' '.mysqli_errno($connection));
     }
     $message = "creat post";
-    header("Location: main.php?user_name=$user_name");
+    header("Location: view_post.php?user_name=$user_name&title=$title&user=$comment_user_name");
     }else{
         $message = "fileds cannot be empty";
         header("Location: add_post.php?user_name=$user_name");
     }
 
 
+  
 }
 ?>
