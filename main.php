@@ -96,7 +96,13 @@ td{
                 echo "<tr>";
                 echo "<td>$idx</td>";
                 echo "<td><a href='view_post.php?user_name={$post_user_name}&title={$post_title}&user={$user_name}'><input type='text' name='title' value='{$post_title}' style='text-align:center; border:none; pointer-events:none; appearence:none;'></a></td>";
+                
+                if($user_name == $post_user_name){
+                echo "<td><a href='view_profile.php?user_name={$post_user_name}&user={$user_name}'><input type='text' name='user_name' value='{$post_user_name}' style='text-align:center; border:none; pointer-events:none; appearence:none;'></a></td>";
+                }else{
                 echo "<td><a href='other_profile.php?user_name={$post_user_name}&user={$user_name}'><input type='text' name='user_name' value='{$post_user_name}' style='text-align:center; border:none; pointer-events:none; appearence:none;'></a></td>";
+
+                }
                 echo "<td><input type='text' name='date' value='{$post_date}' style='text-align:center; border:none; pointer-events:none; appearence:none;'></td>";
                 
                 // echo "<td><button type='submit' name='delete' >x</button></td>";
