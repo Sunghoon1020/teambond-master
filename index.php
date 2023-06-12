@@ -34,7 +34,7 @@
         <h1>Login</h1>
         <form action="login.php?id='<?=$id?>" method="post" name="login">
           <label for="username">Username:</label>
-          <input type="text" id="username" name="user_name" value='<?=$id?>' placeholder="Enter username" required>
+          <input type="text" id="username" name="user_name" placeholder="Enter username" required>
     
           <label for="password">Password:</label>
           <input type="password" id="password" name="user_password" placeholder="Enter password" required>
