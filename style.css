@@ -33,7 +33,7 @@ main {
 	position: absolute;
 	transform: translate(-50%,-50%);
 	box-sizing: border-box;
-	padding: 70px 30px;
+	padding: 150px 30px;
 	border-radius: 10px;
 }
 
@@ -131,6 +131,22 @@ footer {
   color: white;
   padding: 10px;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* transform: translateY(-100%); */
+
+}
+.footer{
+background-color: #333;
+color: white;
+padding: 10px;
+text-align: center;
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
 }
 #home h2, p{
   text-align:center;

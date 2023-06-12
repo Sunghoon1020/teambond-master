@@ -2,14 +2,27 @@
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
     <!-- Page Content -->
+<style>
 
+.footer{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}  
+
+</style>
     <body>
     <header>
       <h1>TeamBond App</h1>
       
     </header>
     <main>
-      <div class="sign-box" id="login">
+      <div class="sign-box container" id="login">
         <h1>Sign Up</h1>
         <form role="form" action="signup.php" method="post" autocomplete="off">
             <div class="form-group">
@@ -41,7 +54,6 @@
                 <input type="text" name="city" id="city" class="form-control" placeholder="Enter your City">
             </div>
             <input type="submit" name="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Submit">
-            <input type="button" name="cancel" class="btn btn-custom btn-lg btn-block" onclick="location.href='./index.php'" value="Cancel"/>
 
         </form>
       </div>
@@ -50,30 +62,10 @@
         Welcome, Admin!
       </div>
     </main>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>    
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
     <br>
     
-    <footer>
+    <footer class="footer">
       <p>&copy; 2023 Westcliff University</p>
     </footer>
   </body>

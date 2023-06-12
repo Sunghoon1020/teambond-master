@@ -6,19 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 
-    <style>
-    .footer{
-      background-color: #333;
-      color: white;
-      padding: 10px;
-      text-align: center;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-    }  
-    </style>
-
+    
   </head>
   <body>
     <header>
@@ -30,9 +18,9 @@
         <p>This is the home page of TeamBond App.</p>
       </div>
 
-      <div class="login-box" id="login" style="height:100%">
+      <div class="login-box" id="login">
         <h1>Login</h1>
-        <form action="login.php?id='<?=$id?>" method="post" name="login">
+        <form action="main.php?id='<?=$id?>" method="post" name="login">
           <label for="username">Username:</label>
           <input type="text" id="username" name="user_name" value='<?=$id?>' placeholder="Enter username" required>
     
@@ -48,8 +36,30 @@
         Welcome, Admin!
       </div>
     </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     
-    <footer class="footer">
+    <footer>
       <p>&copy; 2023 Westcliff University</p>
     </footer>
   </body>

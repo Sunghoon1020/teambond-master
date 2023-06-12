@@ -9,8 +9,12 @@
     $db_user,
     $db_password,
     $db_db
-    
-  );if(isset($_POST['submit'])){
+  );
+  
+$post_name = 0; 
+$post_user_name = $_GET['user'];
+
+if(isset($_POST['submit'])){
 
 $user_name = $_POST['user_name'];
 $title = $_POST['title'];
@@ -18,30 +22,24 @@ $contents = $_POST['contents'];
 $date = $_POST['date'];
 
 
+
+
+
 if(!empty($title) && !empty($contents)){
     
-    $query = "INSERT INTO post(user_name,
-    title,
-    contents,
-    date
-    )
-    VALUES('$user_name',
-    '$title',
-    '$contents',
-    '$date'
-    )"; 
-    var_dump($query);
+    $query = "UPDATE post SET title = '$title', contents = '$contents' WHERE title='$title' and user_name = '$user_name' and date = '$date'";
+
     $rs = mysqli_query($connection,$query);
-    var_dump($rs);
-    // var_dump($query);
+    
+    var_dump($query);
     if(!$rs){
         die("query failed".mysqli_error($connection). ' '.mysqli_errno($connection));
     }
-    $message = "creat post";
-    header("Location: main.php?user_name=$user_name");
+    $message = "edit post";
+    header("Location: view_post.php?title=$title&user_name=$user_name&user=$post_user_name");
     }else{
         $message = "fileds cannot be empty";
-        header("Location: add_post.php?user_name=$user_name");
+        header("Location: view_post.php?title=$title&user_name=$user_name&user=$post_user_name");
     }
 
 
