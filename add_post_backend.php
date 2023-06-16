@@ -1,7 +1,7 @@
 <?php
   $db_host = 'localhost';
   $db_user = 'root';
-  $db_password = 'root';
+  $db_password = '';
   $db_db = 'teambond';
  
   $connection = @new mysqli(
@@ -42,9 +42,8 @@ if(!empty($title) && !empty($contents)){
     header("Location: main.php?user_name=$user_name");
     }else{
         $message = "fileds cannot be empty";
-        header("Location: add_post.php?user_name=$user_name");
+        header("Location: view_post.php?user_name=$post_user_name&title=$title&user=$user_name");
     }
-
 
 }
 ?>

@@ -105,10 +105,12 @@ cursor: pointer;
     <body>
     <header>
     <table class="header" width="100%">
-        <td width="70%">
+        <td width="20%" style="text-align:right;">
+        </td>
+        <td width="60%">
             <h1 style="color: white; text-align:center;">TeamBond</h1>
         </td>
-        <td width="30%" style="text-align:right;">
+        <td width="20%" style="text-align:right;">
         <span style="color:white;text-align:right; padding-right:25px;">Login <a href="view_profile.php?user_name=<?=$post_user_name?>" style="color:white"><?=$post_user_name?></a></span>
         <a href="index.php" style="padding-right:15px;"><button>Sign Out</button></a>
         </td>
