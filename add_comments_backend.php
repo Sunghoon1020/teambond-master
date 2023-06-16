@@ -1,7 +1,7 @@
 <?php
   $db_host = 'localhost';
   $db_user = 'root';
-  $db_password = 'root';
+  $db_password = '';
   $db_db = 'teambond';
  
   $connection = @new mysqli(
@@ -34,21 +34,20 @@ if(!empty($comment_user_name) && !empty($comments)){
     
     $query = "INSERT INTO comment(user_name,
     title,
-    contents,
     date,
+    contents,
     comment_user_name,
     comments,
     comment_date
     )
     VALUES('$user_name',
     '$title',
-    '$contents',
     '$date',
+    '$contents',
     '$comment_user_name',
     '$comments',
     '$comment_date'
     )"; 
-    var_dump($query);
     $rs = mysqli_query($connection,$query);
     if(!$rs){
         die("query failed".mysqli_error($connection). ' '.mysqli_errno($connection));

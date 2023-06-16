@@ -62,7 +62,13 @@ cursor: pointer;
     </head>
     <body>
     <?php include "header.php" ?>
+    <?php 
+    $month = date('m');
+    $day = date('d');
+    $year = date('Y');
 
+    $today = $month . '-' . $day .'-'. $year;
+    ?>
     <br>
     <form role="form" action="add_post_backend.php" method="post" autocomplete="off">
     <div class="container">
@@ -78,7 +84,7 @@ cursor: pointer;
                     <th width="100px">Author</th>
                     <th width="200px"><input type="text" name="user_name" value="<?=$user_name?>" style="border:none; pointer-events: none; appearance: none;"></th>
                     <th width="100px">Date</th>
-                    <th width="200px"><input type="date" name="date" style="border:none;"></th>
+                    <th width="200px"><input type="text" name="date" style="border:none;" value="<?=$today?>"></th>
                 </tr>
             </thead>
             <tbody>

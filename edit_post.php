@@ -88,7 +88,7 @@ cursor: pointer;
                     <th width="100px" style="background-color: #D5D5D5;">Author</th>
                     <th width="200px"><input type="text" name="user_name" value="<?=$user_name?>" style="border:none; pointer-events:none; appearance: none;"></th>
                     <th width="100px" style="background-color: #D5D5D5;">Date</th>
-                    <th width="200px"><input type="date" name="date" value="<?=$date?>" style="border:none; pointer-events:none; appearance: none;"></th>
+                    <th width="200px"><input type="text" name="date" value="<?=$date?>" style="border:none; pointer-events:none; appearance: none;"></th>
                 </tr>
             </thead>
             <tbody>

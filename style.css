@@ -33,7 +33,6 @@ main {
 	position: absolute;
 	transform: translate(-60%,-50%);
 	box-sizing: border-box;
-	padding: 150px 30px;
 	border-radius: 10px;
 }
 
@@ -80,7 +79,7 @@ main {
 	height: 420px;
 	background: #fff;
 	color: #000;
- 	top: 40%;
+ 	top: 30%;
 	left: 50%;
 	position: absolute;
 	transform: translate(-50%,-50%);
@@ -112,11 +111,11 @@ main {
 }
 
 .sign-box button {
-	margin-top: 30px;
+	/* margin-top: 30px; */
 	border: none;
 	background-color: #1c8adb;
 	color: #fff;
-	padding: 15px 20px;
+	/* padding: 15px 20px; */
 	border-radius: 5px;
 	cursor: pointer;
 }
@@ -148,7 +147,7 @@ bottom: 0;
 left: 0;
 width: 100%;
 }
-#home h2, p{
+#home h2, h3, p{
   text-align:center;
 
 }

@@ -36,7 +36,7 @@
   </head>
   <body>
     <header>
-      <h1>TeamBond App</h1>
+      <h1 style="text-align:center;">TeamBond</h1>
     </header>
     <main>
       <div id="home">

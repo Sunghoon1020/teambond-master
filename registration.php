@@ -14,11 +14,77 @@
     left: 0;
     width: 100%;
 }  
+.btn {
+margin-top: 5px;
+border: none;
+background-color: #1c8adb;
+color: #fff;
+/* padding: 10px 10px; */
+border-radius: 5px;
+cursor: pointer;
+}
+
+.btn :hover {
+	background-color: #39ace7;
+	color: #000;
+}.sign-box {
+	width: 320px;
+	height: 420px;
+	background: #fff;
+	color: #000;
+ 	top: 30%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	/* padding: 70px 30px; */
+	border-radius: 10px;
+}
+
+.sign-box label {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	display: block;
+}
+
+.sign-box input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.sign-box input[type="text"], input[type="password"], input[type="email"] {
+	border: none;
+	border-bottom: 1px solid #000;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #000;
+	font-size: 16px;
+}
+
+.sign-box button {
+	/* margin-top: 30px; */
+	border: none;
+	background-color: #1c8adb;
+	color: #fff;
+	/* padding: 15px 20px; */
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.sign-box button:hover {
+	background-color: #39ace7;
+	color: #000;
+}
+.sr-only{
+  text-align:left;
+}
 
 </style>
     <body>
     <header>
-      <h1>TeamBond App</h1>
+      <h1 style="text-align:center;">TeamBond</h1>
       
     </header>
     <main>
@@ -53,7 +119,9 @@
                 <label for="city" class="sr-only">City</label>
                 <input type="text" name="city" id="city" class="form-control" placeholder="Enter your City">
             </div>
-            <input type="submit" name="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Submit">
+            <button type="submit" name="submit" id="btn-login" class="btn  btn-block">Submit</button>
+            <a href="index.php"><button type="button" name="submit" id="btn-login" class="btn  btn-block">Back</button></a>
+
 
         </form>
       </div>

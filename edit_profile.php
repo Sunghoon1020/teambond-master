@@ -36,7 +36,6 @@ $user_name = $_GET['user_name'];
 
             $rs = mysqli_query($connection, $query);
                 if($row = mysqli_fetch_assoc($rs)){
-                $load_user_id = $row['user_id'];
                 $load_user_password = $row['user_password'];
                 $load_user_email = $row['user_email'];
                 $load_user_name = $row['user_name'];
