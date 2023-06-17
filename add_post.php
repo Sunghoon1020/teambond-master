@@ -23,6 +23,14 @@ $user_name = $_GET['user_name'];
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
 <style>
+th {
+    padding: 16px;
+}
+
+td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
 
 .footer{
     background-color: #333;
@@ -35,22 +43,23 @@ $user_name = $_GET['user_name'];
     width: 100%;
 }  
 .container{
-      background: #fff;
-      color: #000;
-      top: 20%;
-      left: 50%;
-      position: absolute;
-      transform: translate(-50%,-50%);
-      box-sizing: border-box;
-    }
+    background: #fff;
+    color: #000;
+    margin-top: 60px;
+    top: 35%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
 .container button {
-margin-top: 30px;
-border: none;
-background-color: #1c8adb;
-color: #fff;
-padding: 10px 10px;
-border-radius: 5px;
-cursor: pointer;
+    margin-top: 30px;
+    border: none;
+    background-color: #1c8adb;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .container button:hover {
@@ -90,7 +99,7 @@ cursor: pointer;
             <tbody>
                 <tr>
                     <td colspan="4">
-                    <textarea row="5" cols="75" name="contents" style="border:none;"></textarea>
+                    <textarea row="30" cols="75" name="contents" style="border:none;min-height:150px;"></textarea>
                     </td>
                 </tr>
             </tbody>

@@ -39,6 +39,14 @@ $rs = mysqli_query($connection, $query);
     margin-right:auto;
 }
 
+th {
+    padding: 16px;
+}
+
+td {
+    padding: 12px;
+}
+
 .footer{
     background-color: #333;
     color: white;
@@ -94,7 +102,7 @@ cursor: pointer;
             <tbody>
                 <tr>
                     <td colspan="4">
-                    <textarea row="5" cols="75" name="contents" style="border:none;"><?=$contents?></textarea>
+                    <textarea row="5" cols="75" name="contents" style="border:none; min-height: 100px;"><?=$contents?></textarea>
                     </td>
                 </tr>
             </tbody>

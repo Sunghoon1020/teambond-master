@@ -16,6 +16,7 @@ $rs = mysqli_query($connection, $query);
 
 ?>
 <style>
+
 .container{
     margin-left:auto;
     margin-right:auto;
@@ -25,9 +26,28 @@ $rs = mysqli_query($connection, $query);
     margin-right:auto;
 
 }
+
 .tbl{
     margin-left:auto;
     margin-right:auto;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding-left: 20px;
+}
+
+.tbl tr {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 16px;
+}
+
+td {
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .footer{
@@ -40,13 +60,6 @@ $rs = mysqli_query($connection, $query);
     left: 0;
     width: 100%;
 }
-th {
-  background-color: #D5D5D5;  
-}
-
-td{
-    height: 25px;
-}
 
 
 .container button {
@@ -54,7 +67,7 @@ td{
 	border: none;
 	background-color: #1c8adb;
 	color: #fff;
-	padding: 10px 10px;
+	padding: 10px 20px;
 	border-radius: 5px;
 	cursor: pointer;
 }
@@ -79,17 +92,15 @@ td{
     <?php include "header.php" ?>
     <div class="container">
         <div class="top_tbl" style="width:810px; text-align:right;">
-            <form role="form" action="add_post.php?user_name=<?=$user_name?>" enctype='multipart/form-data' method="post" autocomplete="off">
             <br><br>
             <h1 style="text-align:center; font-weight:600;" >Welcome to TeamBond</h1>
-            <h3 style="text-align:center;">Our mission is to build a vibrant and engaging digital space designed 
-            <h3 style="text-align:center;">to foster a sense of company and boost morale within the organization. </h3>
-            <h3 style="text-align:center;">You can post anything you like here.</h3>
-            <button type="submit" class='btn btn-custom btn-lg btn-block' style="text-align:right;">Add Post</button>
-            </form>
+            <h3 style="text-align:center;">You may create any topic you like. Posts can be viewed by everyone in your organization.</h3>
         </div>
-        <table class="tbl" border="1" style="width:810px;border-collapse:collapse; text-align:center;">
-            <thead>
+        <br/>
+        <br/>
+        <br/>
+        <table class="tbl" style="width:810px;border-collapse:collapse; text-align:center;">
+            <thead class="table-header">
                 <tr>
                     <th width="30px" height="35px">#</th>
                     <th width="400px">Title</th>
@@ -141,6 +152,9 @@ td{
             ?>
              </tbody>
         </table>
+        <br/>
+        <form role="form" action="add_post.php?user_name=<?=$user_name?>" enctype='multipart/form-data' method="post" autocomplete="off">
+            <button type="submit" class='btn btn-custom btn-lg btn-block' style="text-align:right;">Add Post</button>
         </form>
     </div>
 
