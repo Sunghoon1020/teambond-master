@@ -6,33 +6,6 @@
     <title>TeamBond</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-
-    <style>
-    .footer{
-      background-color: #333;
-      color: white;
-      padding: 10px;
-      text-align: center;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-    }  
-    .login-box {
-      width: 320px;
-      height: 420px;
-      background: #fff;
-      color: #000;
-      top: 70%;
-      left: 50%;
-      position: absolute;
-      transform: translate(-50%,-50%);
-      box-sizing: border-box;
-      padding: 150px 30px;
-      border-radius: 10px;
-    }
-    </style>
-
   </head>
   <body>
     <header>
@@ -41,7 +14,9 @@
     <main>
       <div id="home">
         <h2>Welcome!</h2>
-        <p>This is the home page of TeamBond App.</p>
+        <h3 style="text-align:center;">Our mission is to build a vibrant and engaging digital space designed 
+        <h3 style="text-align:center;">to foster a sense of company and boost morale within the organization. </h3>
+        <h3 style="text-align:center;">You can post anything you like here.</h3>
       </div>
 
       <div class="login-box" id="login" style="height:100%">
@@ -65,3 +40,28 @@
     </footer>
   </body>
 </html>
+<style>
+  .footer{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }  
+  .login-box {
+    width: 320px;
+    height: 420px;
+    background: #fff;
+    color: #000;
+    top: 80%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 60px 30px;
+    border-radius: 10px;
+  }
+</style>

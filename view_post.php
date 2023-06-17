@@ -41,13 +41,24 @@ $today = $month . '-' . $day .'-'. $year;
     margin-left:auto;
     margin-right:auto;
 }
+
 .tbl{
     margin-left:auto;
     margin-right:auto;
 }
+
 th{
   height:35px;
 }
+
+th {
+    padding: 16px;
+}
+
+td {
+    padding: 12px;
+}
+
 .footer{
     background-color: #333;
     color: white;
@@ -138,7 +149,7 @@ cursor: pointer;
             <tbody>
                 <tr>
                     <td colspan="4">
-                    <textarea row="5" cols="75" name="contents" style="border:none; pointer-events:none; appearance: none;"><?=$contents?></textarea>
+                    <textarea row="5" cols="75" name="contents" style="border:none; pointer-events:none; appearance: none; min-height:100px;"><?=$contents?></textarea>
                     </td>
                 </tr>
             </tbody>
@@ -174,7 +185,7 @@ cursor: pointer;
             </thead>
             <tbody>
                <tr>
-                <td colspan="4"><textarea name="comments" row="3" cols="75" style="border:none;"></textarea>
+                <td colspan="4"><textarea name="comments" row="3" cols="75" style="border:none; min-height: 50px;"></textarea>
                 
                   <input type="hidden" name="user_name" value="<?=$user_name?>">
                   <input type="hidden" name="title" value="<?=$title?>">
