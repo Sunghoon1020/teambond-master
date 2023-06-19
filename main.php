@@ -16,7 +16,6 @@ $rs = mysqli_query($connection, $query);
 
 ?>
 <style>
-
 .container{
     margin-left:auto;
     margin-right:auto;
@@ -26,7 +25,6 @@ $rs = mysqli_query($connection, $query);
     margin-right:auto;
 
 }
-
 .tbl{
     margin-left:auto;
     margin-right:auto;
@@ -92,6 +90,7 @@ td {
     <?php include "header.php" ?>
     <div class="container">
         <div class="top_tbl" style="width:810px; text-align:right;">
+            <form role="form" action="add_post.php?user_name=<?=$user_name?>" enctype='multipart/form-data' method="post" autocomplete="off">
             <br><br>
             <h1 style="text-align:center; font-weight:600;" >Welcome to TeamBond</h1>
             <h3 style="text-align:center;">You may create any topic you like. Posts can be viewed by everyone in your organization.</h3>
@@ -152,9 +151,7 @@ td {
             ?>
              </tbody>
         </table>
-        <br/>
-        <form role="form" action="add_post.php?user_name=<?=$user_name?>" enctype='multipart/form-data' method="post" autocomplete="off">
-            <button type="submit" class='btn btn-custom btn-lg btn-block' style="text-align:right;">Add Post</button>
+        <button type="submit" class='btn btn-custom btn-lg btn-block' style="text-align:right;">Add Post</button>
         </form>
     </div>
 

@@ -6,6 +6,7 @@
     <title>TeamBond</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+
   </head>
   <body>
     <header>
@@ -13,7 +14,7 @@
     </header>
     <main>
       <div id="home">
-        <h2>Welcome!</h2>
+      <h2>Welcome!</h2>
         <h3 style="text-align:center;">Our mission is to build a vibrant and engaging digital space designed 
         <h3 style="text-align:center;">to foster a sense of company and boost morale within the organization. </h3>
         <h3 style="text-align:center;">You can post anything you like here.</h3>

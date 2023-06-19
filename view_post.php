@@ -42,6 +42,7 @@ $today = $month . '-' . $day .'-'. $year;
     margin-right:auto;
 }
 
+
 .tbl{
     margin-left:auto;
     margin-right:auto;
@@ -185,7 +186,7 @@ cursor: pointer;
             </thead>
             <tbody>
                <tr>
-                <td colspan="4"><textarea name="comments" row="3" cols="75" style="border:none; min-height: 50px;"></textarea>
+               <td colspan="4"><textarea name="comments" row="3" cols="75" style="border:none; min-height: 50px;"></textarea>
                 
                   <input type="hidden" name="user_name" value="<?=$user_name?>">
                   <input type="hidden" name="title" value="<?=$title?>">
@@ -239,7 +240,7 @@ cursor: pointer;
                   <td width="30px" style="text-align:center;"><?php echo $comment_cnt;?></td>
                   <td><textarea row='3' cols='50' style='border:none; pointer-events:none; appearance: none;'><?=$comments?></textarea></td>
                   <td><input type='text' name='comment_author' value='<?=$comment_user_name?>' style="border:none; pointer-events:none; appearance: none; width:80px;"></td>
-                  <td><input type='text' name='comment_date' value='<?=$today?>' style='border:none; pointer-events: none; appearance: none;'></td>
+                  <td><input type='text' name='comment_date' value='<?=$comment_date?>' style='border:none; pointer-events: none; appearance: none;'></td>
                   <td><a href="del_comments.php?comments=<?=$comments?>&comment_date=<?=$comment_date?>&comment_user_name=<?=$comment_user_name?>&user_name=<?=$user_name?>&title=<?=$title?>"><button type="button" name="delete">X</button></a></td>
                 </tr>
   

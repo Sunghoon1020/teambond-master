@@ -56,7 +56,7 @@ if(!empty($comment_user_name) && !empty($comments)){
     header("Location: view_post.php?user_name=$user_name&title=$title&user=$comment_user_name");
     }else{
         $message = "fileds cannot be empty";
-        header("Location: add_post.php?user_name=$user_name");
+        header("Location: view_post.php?user_name=$user_name&title=$title&user=$comment_user_name");
     }
 
 
